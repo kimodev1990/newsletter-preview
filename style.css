@@ -206,6 +206,7 @@ button:hover {
 
     .container__details {
         width: 50%;
+        padding: 0;
     }
 
     .container__details__title {
