@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Newsletter sign up preview">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Newsletter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="container__details">
+            <h2 class="container__details__title">
+                Stay updated!
+            </h2>
+            <h3 class="container__details__subTitle">
+                Join 60,000+ product managers receiving monthly updates on:
+            </h3>
+            <div class="container__details__lists">
+                <div class="icon_check"><img src="./assets/images/icon-list.svg" alt="checkup icon"></div>
+                <h3>Product discovery and building what matters</h3>
+            </div>
+            <div class="container__details__lists">
+                <div class="icon_check"><img src="./assets/images/icon-list.svg" alt="checkup icon"></div>
+                <h3>Measuring to ensure updates are a success</h3>
+            </div>
+            <div class="container__details__lists">
+                <div class="icon_check"><img src="./assets/images/icon-list.svg" alt="checkup icon"></div>
+                <h3>And much more!</h3>
+            </div>
+            <div class="container__details__emailTitle">
+                <h4>Email address</h4>
+                <h4 class="labelError hidden" id="labelError">Valid email required</h4></label>
+            </div>
+            <form id="form-input" name="form">
+                <input type="text" name="email" id="email-input" placeholder="email@company.com">
+                <button type="submit">
+                    <h4>Subscribe to monthly newsletter</h4>
+                </button>
+            </form>
+        </div>
+        <picture class="container__divImage">
+            <source media="(max-width:376px)" srcset="assets/images/illustration-sign-up-mobile.svg">
+            <img src="./assets/images/illustration-sign-up-desktop.svg" alt="sign in image">
+        </picture>
+    </div>
+    <div class="sub-container hidden" id="sub-container">
+        <div class="sub-container__success-icon">
+            <img src="./assets/images/icon-success.svg" alt="success icon">
+        </div>
+        <h2>Thanks for subscribing!</h2>
+        <h3>A confirmation email has been sent to ash@loremcompany.com.
+            Please open it and click the button inside to confirm your subscription.
+        </h3>
+        <button type="click" id="dismiss" class="dismiss">
+            <h4>
+                Dismiss message
+            </h4>
+        </button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
