@@ -9,7 +9,7 @@ form.addEventListener("submit", (e) => {
   const input = document.getElementById("email-input");
   const error = document.getElementById("labelError");
 
-  if (input.value === "" || validateEmail(input.value) === true) {
+  if (validateEmail(input.value.trim()) === true) {
     showError();
   } else {
     hideError();
